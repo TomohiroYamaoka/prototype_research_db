@@ -4,7 +4,7 @@ Prototyping a research database with Typescript and React
 
 ## 手順
 
-### backend
+## backend
 
 ・仮想環境作成  
 python3 -m venv .venv
@@ -25,6 +25,11 @@ $ pipenv install django-markdownx
 npx create-react-app frontend
 
 ## 参考
+
+## フロントとバックエンドを連携するやり方
+
+・CORS(オリジン間リソース共有)の設定を下記コマンドで実行
+pipenv install django-cors-headers
 
 ・React と Djnago のアプリ構築の例  
 https://zenn.dev/piyopanman/articles/6ccf6404a82727
