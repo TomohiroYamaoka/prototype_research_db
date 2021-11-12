@@ -24,23 +24,23 @@ class ListDaily(APIView):
 
 
 class DetailDaily(APIView):
-    def get(self, request):
+    def get(self, request, pk):
         try:
             try:
-                daily = Daily.objects.filter(isOpen=True).order_by('-date')
+                daily = Daily.objects.get(id=pk)
             except:
                 error_msg = "idなし"
-                return Response(error_msg)
-                res = {
-                    'id': daily.id,
-                    'date': daily.date,
-                    'study': daily.study,
-                    'other': daily.other,
-                    'first_meet': daily.first_meet,
-                    'wanna_do': daily.wanna_do,
-                    'summary': daily.summary,
-                }
-                return Response(res)
+                return Response(error_msg, status=status.HTTP_404_NOT_FOUND)
+            res = {
+                'id': daily.id,
+                'date': daily.date,
+                'study': daily.study,
+                'other': daily.other,
+                'first_meet': daily.first_meet,
+                'wanna_do': daily.wanna_do,
+                'summary': daily.summary,
+            }
+            return Response(res)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
