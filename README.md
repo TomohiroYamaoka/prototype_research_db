@@ -21,8 +21,13 @@ $ pipenv install django-markdownx
 
 ### frontend
 
+frontend フォルダを作成し、その配下で  
+npx create-react-app .
+
 ・React のディレクトリ作成  
-npx create-react-app frontend
+npx create-react-app
+npm install react-router-dom
+npm start
 
 ## 参考
 
