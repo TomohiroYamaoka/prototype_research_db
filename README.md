@@ -10,8 +10,8 @@ Prototyping a research database with Typescript and React
 python3 -m venv .venv
 
 ・django プロジェクト作成
-django-admin startproject config .
-python3 manage.py startapp "app 名前"
+django-admin startproject config .  
+python3 manage.py startapp "app 名前"  
 python manage.py migrate
 
 ・django に必要なものをインストール  
@@ -36,8 +36,6 @@ https://zenn.dev/piyopanman/articles/6ccf6404a82727
 
 ・ディレクトリ構造の例
 https://zenn.dev/yoshiko/articles/99f8047555f700
-
-・
 
 ## 流れ
 
