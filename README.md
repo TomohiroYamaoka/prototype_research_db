@@ -19,7 +19,7 @@ $ pipenv install django
 $ pipenv install djangorestframework  
 $ pipenv install django-markdownx
 
-### frontend
+## frontend
 
 frontend フォルダを作成し、その配下で  
 npx create-react-app .
@@ -29,7 +29,7 @@ npx create-react-app
 npm install react-router-dom
 npm start
 
-## 参考
+##　参考
 
 ## フロントとバックエンドを連携するやり方
 
@@ -44,8 +44,8 @@ https://zenn.dev/yoshiko/articles/99f8047555f700
 
 ## 流れ
 
-React と Typescript で作成
-↓
-React と Next.js に改修
-↓
+React と Typescript で作成  
+↓  
+React と Next.js に改修  
+↓  
 フロントのデザインを変更
