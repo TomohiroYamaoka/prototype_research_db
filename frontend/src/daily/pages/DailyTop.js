@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getDaily } from "../daily/api/getDaily";
+import { getDaily } from "../api/getDaily";
 import { DailyContent } from "../components/DailyContent";
 import { CategoryList } from "../components/CategoryList";
 
