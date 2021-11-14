@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import img1 from "../../images/daily/1.jpg";
-import img2 from "../../images/daily/2.png";
-import img3 from "../../images/daily/3.png";
-import img4 from "../../images/daily/4.png";
+import img2 from "../../images/daily/2.jpg";
+import img3 from "../../images/daily/3.jpg";
+import img4 from "../../images/daily/4.jpg";
 
 export const DailyContent = (daily) => {
   let eva;
